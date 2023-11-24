@@ -5,6 +5,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Geral
@@ -49,14 +51,14 @@ public class Exemplo3 extends javax.swing.JFrame {
 
         jButton6.setText("Desmarcar");
 
-        jIngles.setText("Inglês");
+        jIngles.setText("Java");
         jIngles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jInglesActionPerformed(evt);
             }
         });
 
-        jInfo.setText("Informática");
+        jInfo.setText("Banco de dados");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -77,9 +79,9 @@ public class Exemplo3 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(82, 82, 82)
                 .addComponent(jIngles)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jInfo)
-                .addGap(29, 29, 29)
+                .addGap(45, 45, 45)
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton5)
@@ -94,12 +96,17 @@ public class Exemplo3 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
             String selecao = "Selecionados: ";
             if(jIngles.isSelected()){
-                   selecao+= "\nInglês";
+                   selecao+= "\n"+jIngles.getText();
             }
             if(jInfo.isSelected()){
                 selecao+= "\nInformática";
             }
-            JOptionpane.showMEssageDialog(null, selecao);
+            if(!jIngles.isSelected()&&(jInfo.isSelected())
+            JOptionPane.showMessageDialog(null, "Nenhum curso selecionado!");
+            JOptionpane.showMessageDialog(null, selecao);
+            }else
+               JOptionPane.showMessageDialog(null, selecao);
+            }
          
     }//GEN-LAST:event_jButton1ActionPerformed
 

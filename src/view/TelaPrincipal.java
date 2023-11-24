@@ -34,8 +34,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
+        jMenuEdit = new javax.swing.JMenu();
+        jSair = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,7 +52,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Killer");
+        jButton2.setText("AAAA");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton2MouseEntered(evt);
@@ -90,6 +90,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8-logo-java-coffee-cup-30.png"))); // NOI18N
         jMenu1.setText("File");
+        jMenu1.addMenuKeyListener(new javax.swing.event.MenuKeyListener() {
+            public void menuKeyPressed(javax.swing.event.MenuKeyEvent evt) {
+                jMenu1MenuKeyPressed(evt);
+            }
+            public void menuKeyReleased(javax.swing.event.MenuKeyEvent evt) {
+            }
+            public void menuKeyTyped(javax.swing.event.MenuKeyEvent evt) {
+            }
+        });
         jMenu1.addMenuListener(new javax.swing.event.MenuListener() {
             public void menuCanceled(javax.swing.event.MenuEvent evt) {
             }
@@ -106,16 +115,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        jMenuEdit.setText("Edit");
+        jMenuBar1.add(jMenuEdit);
 
-        jMenu3.setText("Sair");
-        jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
+        jSair.setText("Sair");
+        jSair.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu3MouseClicked(evt);
+                jSairMouseClicked(evt);
             }
         });
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(jSair);
 
         setJMenuBar(jMenuBar1);
 
@@ -133,9 +142,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
+    private void jSairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jSairMouseClicked
     dispose();
-    }//GEN-LAST:event_jMenu3MouseClicked
+    }//GEN-LAST:event_jSairMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -164,6 +173,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void jMenu1MenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_jMenu1MenuSelected
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu1MenuSelected
+
+    private void jMenu1MenuKeyPressed(javax.swing.event.MenuKeyEvent evt) {//GEN-FIRST:event_jMenu1MenuKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu1MenuKeyPressed
 
     /**
      * @param args the command line arguments
@@ -204,9 +217,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu jMenuEdit;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenu jSair;
     // End of variables declaration//GEN-END:variables
 }

@@ -12,21 +12,22 @@
             <Property name="text" type="java.lang.String" value="File"/>
           </Properties>
           <Events>
+            <EventHandler event="menuKeyPressed" listener="javax.swing.event.MenuKeyListener" parameters="javax.swing.event.MenuKeyEvent" handler="jMenu1MenuKeyPressed"/>
             <EventHandler event="menuSelected" listener="javax.swing.event.MenuListener" parameters="javax.swing.event.MenuEvent" handler="jMenu1MenuSelected"/>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu1MouseClicked"/>
           </Events>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="jMenuEdit">
           <Properties>
             <Property name="text" type="java.lang.String" value="Edit"/>
           </Properties>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu3">
+        <Menu class="javax.swing.JMenu" name="jSair">
           <Properties>
             <Property name="text" type="java.lang.String" value="Sair"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jMenu3MouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jSairMouseClicked"/>
           </Events>
         </Menu>
       </SubComponents>
@@ -107,7 +108,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Killer"/>
+            <Property name="text" type="java.lang.String" value="AAAA"/>
           </Properties>
           <Events>
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton2MouseEntered"/>

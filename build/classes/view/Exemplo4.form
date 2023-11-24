@@ -48,9 +48,9 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
               <Component id="jIngles" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jInfo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jButton5" min="-2" max="-2" attributes="0"/>
@@ -82,7 +82,7 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="jIngles">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Java"/>
+        <Property name="text" type="java.lang.String" value="Ingl&#xea;s"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jInglesActionPerformed"/>
@@ -90,7 +90,7 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="jInfo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Banco de dados"/>
+        <Property name="text" type="java.lang.String" value="Inform&#xe1;tica"/>
       </Properties>
     </Component>
   </SubComponents>
